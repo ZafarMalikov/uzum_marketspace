@@ -1,0 +1,25 @@
+server:
+  port: 8083
+
+  servlet:
+    context-path: /api/v1
+
+spring:
+  rabbitmq:
+    port: 5672
+    username: user
+    password: user
+  application:
+    name: uzum-order-service
+  datasource:
+    password: postgres
+    username: postgres
+    url: jdbc:postgresql://localhost:5434/postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+

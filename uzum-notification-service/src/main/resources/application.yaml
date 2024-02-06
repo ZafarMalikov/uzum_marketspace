@@ -1,0 +1,15 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /api/v1
+spring:
+  application:
+    name: uzum-notification-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+uzum-notificaiton-service:
+  eskiz:
+    access-token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDUyMjk0NDQsImlhdCI6MTcwMjYzNzQ0NCwicm9sZSI6InVzZXIiLCJzdWIiOiI1MzI3In0.QwmUQVne8tw3MXCuNPbN7YXyuMektsRvDh2f9NY6Ekg
+
